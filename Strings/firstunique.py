@@ -6,8 +6,8 @@
  Input: s = "leetcode"
  Output: 0
 
- Input: t = "leetcode"
- Output: 3
+ Input: t = "fluffy"
+ Output: 2
 '''
 
 
