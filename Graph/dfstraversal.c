@@ -53,7 +53,7 @@ void Graph_DFS(Graph *g, int s)
         if (visited[g->adj[s][adjacent]])
                 continue;
         else
-            Graph_DFS(g, g->adj[s][adjacent]]) // Traverse recursively all neigbours
+            Graph_DFS(g, g->adj[s][adjacent]) // Traverse recursively all neigbours
     }    
 }
 
