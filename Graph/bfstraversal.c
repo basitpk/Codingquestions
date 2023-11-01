@@ -47,7 +47,7 @@ void Graph_BFS(Graph *g, int s)
     for (int i = 0; i < g->V; i++) {
         visited[i] = false;
     }  
-    int queue[g->V]
+    int queue[g->V];
     int front = 0, rear =0;
   
     // Mark the current node as visited and enqueue it
@@ -58,12 +58,12 @@ void Graph_BFS(Graph *g, int s)
     {
           s = queue[front++];
           printf("%d ",s);
-          for(int adj = 0; adj < g->V; adj++)
+          for(int adjacent = 0; adjacent < g->V; adjacent++)
           {
                 if(g->adj[s][adjacent] && !visited[s])
                 {
                     visited[s] = true;
-                    queue[rear++] = adjacent
+                    queue[rear++] = adjacent;
                 }
           }
     }

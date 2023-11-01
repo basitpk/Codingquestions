@@ -1,0 +1,80 @@
+# Python3 program to find maximum number
+# of meetings
+
+# Custom class for storing starting time,
+# finishing time and position of meeting.
+
+"""
+Note : Asked by Zscaler
+"""
+
+
+class meeting:
+
+    def __init__(self, start, end, pos):
+
+        self.start = start
+        self.end = end
+        self.pos = pos
+    def __repr__(self):
+        return f"Start = {self.start} ,end = {self.end}, pos ={self.pos} \n"
+# Function for finding maximum
+# meeting in one room
+
+
+def maxMeeting(l, N):
+
+    # Initialising an arraylist
+    # for storing answer
+    ans = []
+
+    # Sorting of meeting according to
+    # their finish time.
+    l.sort(key=lambda x: x.end)
+    # print("\n")
+    # print(l)    
+
+    # Initially select first meeting
+    ans.append(l[0].pos)
+
+    # time_limit to check whether new
+    # meeting can be conducted or not.
+    time_limit = l[0].end
+
+    # Check for all meeting whether it
+    # can be selected or not.
+    for i in range(1, N):
+        if l[i].start > time_limit:
+            ans.append(l[i].pos)
+            time_limit = l[i].end
+
+    # Print final selected meetings
+    for i in ans:
+        # break
+        print(i + 1, end=" ")
+
+
+# Driver's code
+if __name__ == '__main__':
+
+    # Starting time
+    s = [1, 3, 0, 5, 8, 5]
+
+    # Finish time
+    f = [2, 4, 6, 7, 9, 9]
+
+    # Number of meetings.
+    N = len(s)
+
+    l = []
+
+    for i in range(N):
+
+        # Creating object of meeting
+        # and adding in the list
+        l.append(meeting(s[i], f[i], i))
+
+    # Function call
+    maxMeeting(l, N)
+    
+# This code is contributed by MuskanKalra1
