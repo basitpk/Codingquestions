@@ -8,18 +8,19 @@
   Explanation: [0,-10,5,null,-3,null,9] is also accepted
 
 */
-
+#include<stdio.h>
+#include<stdlib.h>
 
 
 
 /**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+ * Definition for a binary tree node.*/
+struct TreeNode {
+     int val;
+     struct TreeNode *left;
+     struct TreeNode *right;
+};
+ 
 struct TreeNode *sortedArray(int arr[], int l , int r)
 {
     
