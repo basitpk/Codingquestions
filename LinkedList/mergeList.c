@@ -17,6 +17,8 @@ Output: [1,1,2,3,4,4]
 
 
 //  Definition for singly-linked list.
+#include<stdio.h>
+
  struct ListNode {
      int val;
      struct ListNode *next;
