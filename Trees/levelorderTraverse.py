@@ -33,7 +33,7 @@ class Solution:
             for i in range(0,size):
                 node = queue[0]
                 queue.pop(0)
-                
+                printf("\n,", queue.pop(0))
                 if node:
                     level.append(node.val)
                     if(node.left):
