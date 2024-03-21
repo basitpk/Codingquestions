@@ -7,6 +7,9 @@
  *    k =3
  *   
  *    output =3
+
+
+ Asked in NetApp
  * **/
 
 

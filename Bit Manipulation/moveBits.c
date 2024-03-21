@@ -2,6 +2,8 @@
 #include <math.h>
 #include <string.h>
 
+/** Asked in Samsung  **/
+
 void decimaltoBinary(int val, char bits[20])
 {
   int i = 0;

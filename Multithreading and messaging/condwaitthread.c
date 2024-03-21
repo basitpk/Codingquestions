@@ -1,5 +1,8 @@
 // C program to implement cond(), signal()
 // and wait() functions
+
+// Also asked in Zscaler
+
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
