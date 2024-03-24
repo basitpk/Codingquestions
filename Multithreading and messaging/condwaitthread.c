@@ -1,7 +1,7 @@
 // C program to implement cond(), signal()
 // and wait() functions
 
-// Also asked in Zscaler
+// Also asked in Zscaler and also Arista Networks
 
 #include <pthread.h>
 #include <stdio.h>
