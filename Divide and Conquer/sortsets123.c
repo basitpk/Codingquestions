@@ -57,7 +57,7 @@ void sortArray(int arr[], int N)
 // Driver Code
 int main()
 {
-    int arr[] = { 3, 2, 1, 1, 2, 3, 1, 2 };
+    int arr[] = { 1, 2, 1, 3, 2, 3, 1, 1 };
     int N = sizeof(arr) / sizeof(arr[0]);
     sortArray(arr, N);
  
