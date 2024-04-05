@@ -3,6 +3,14 @@
  Problem Statement :
 
     Count number od bits set in a number in the fastest way
+    
+    Another way to solve this is loop through 
+    while(n)
+    {
+      count++;
+      n = n&(n-1);
+      // This always resets the last set bit
+    }
 
   Asked in Zscaler
 
