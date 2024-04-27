@@ -29,7 +29,7 @@ void decimaltoBinary(int val, char bits[20])
 
 int moveBits(int val,int pos1, int pos2, int numBits)
 {
-  int setBits = (1<<(numBits+1)) -1;
+  int setBits = (1<<(numBits)) -1;
   int mask1 = setBits << pos1;
   int mask2 = setBits << pos2;
 
@@ -42,7 +42,7 @@ int moveBits(int val,int pos1, int pos2, int numBits)
 
 int main()
 {
-    int input = 0b1010100111010101;
+    int input = 0b1010100111011111;
     int pos1=1;
     int pos2 = 8;
     int numBits = 5;
