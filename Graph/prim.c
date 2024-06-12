@@ -45,14 +45,14 @@ void primMST(int graph[V][V])
    // To represent set of vertices included in MST
    int key[V];
 
-   // Always include first 1st vertex in MST.
-   // Make key 0 so that this vertex is picked as first
-   // vertex.
-   key[0] = 0;
-
     // Initialize all keys as INFINITE
    for (int i = 0; i < V; i++)
         key[i] = INT_MAX, mstSet[i] = false;
+
+    // Always include first 1st vertex in MST.
+   // Make key 0 so that this vertex is picked as first
+   // vertex.
+   key[0] = 0;
 
    parent[0] = -1;
 
