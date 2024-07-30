@@ -16,6 +16,7 @@ Output: 0
 
 '''
 
+from typing import List
 
 class Solution:
     def minMoves(self, nums: List[int]) -> int:

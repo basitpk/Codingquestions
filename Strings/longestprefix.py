@@ -8,6 +8,9 @@ Input: strs = ["flower","flow","flight"]
 Output: "fl"
 '''
 
+from typing import List
+
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         strs.sort()
