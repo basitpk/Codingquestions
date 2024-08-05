@@ -9,7 +9,7 @@ void signal_handler(int signum) {
 }
 
 int main() {
-    signal(SIGTSTP, signal_handler); // Register handler for SIGTSTP (Ctrl+C)
+    signal(SIGTSTP, signal_handler); // Register handler for SIGTSTP (Ctrl+Z)
 
     while (1) {
         // Do something
